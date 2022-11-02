@@ -31,7 +31,8 @@ const checkEndgame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
     if (disabledCards.length === 20) {
-        alert('Parabéns, voce conseguiu!');
+        clearInterval(this.loop);
+        alert(`Parabéns ${spanPlayer.innerHTML}! Seu tempo foi de: ${timer.innerHTML}`);
     }
 }
  
@@ -76,7 +77,7 @@ const revealCard = ({target}) => {
         target.parentNode.classList.add('reveal-card');
         firstCard = target.parentNode;
     
-    }   else if (secondCard === '') {
+    }   else if (secondCard === '' && target.parentNode.classList[0] !== 'grid') {
 
         target.parentNode.classList.add('reveal-card');
         secondCard = target.parentNode;
@@ -117,5 +118,22 @@ const loadGame = () => {
     });
 }
 
-loadGame();
+const startTimer = () => {
+
+    this.loop = setInterval(() => {
+        const currentTime = Number(timer.innerHTML);
+        timer.innerHTML = currentTime + 1;
+    }, 1000);
+}
+
+window.onload = () => {
+    
+    const playerName = localStorage.getItem('player');
+
+    spanPlayer.innerHTML = playerName;
+    
+    startTimer();
+    loadGame();
+}
+
 
