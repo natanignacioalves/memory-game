@@ -1,4 +1,6 @@
 .login-form{
+    background-image: url(../imagens/bg3.jpg);
+    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;
