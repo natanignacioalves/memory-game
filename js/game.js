@@ -11,8 +11,8 @@ const characters = [
     'burro',
     'pinoquio',
     'lobo-mau',
-    'Doris',
-    'fada-Madrinha',
+    'doris',
+    'fada-madrinha',
     'principe-encantado',
     'biscoito',
 ];
