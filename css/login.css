@@ -1,6 +1,9 @@
+body {
+   background-color: #2BFE5D;
+  /*   background-image: linear-gradient(to top, #3835fcc6,  #29fe7bdb 70%);*/
+}
+
 .login-form{
-    background-image: url(../imagens/bg3.jpg);
-    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;

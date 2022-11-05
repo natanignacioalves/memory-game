@@ -3,11 +3,11 @@ const button = document.querySelector('.login_button');
 const form = document.querySelector('.login-form');
 
 const validateInput = ({target}) => { //desestruturaçao de objts
-    if (target.value.length > 2) {
+    if (target.value.length > 2 ) {
         button.removeAttribute('disabled');
         return;
-    }
-    button.setAttribute('disabled', '');
+    } 
+    button.setAttribute('disabled', '');    
 }
 //------------------------------------------------- ok
 const handleSubmit = (event) => {
