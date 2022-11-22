@@ -5,7 +5,8 @@
 <h2>Descrição</h2>
 
 <p> Jogo da memória com tema do Shrek  </p>
-<p>Praticando conceitos mais avançados das Linguagens com <a href="https://www.youtube.com/c/ManualdoDev">Manual do Dev </a>  </p>
+<p>Projeto desenvolvido em JavaScript, HTML e CSS, usando local storage para armazenar o nome do jogador</p>
+<p>Praticando conceitos com <a href="https://www.youtube.com/c/ManualdoDev">Manual do Dev </a>  </p>
 
 <h2>Tecnologias Usadas</h2>
 
